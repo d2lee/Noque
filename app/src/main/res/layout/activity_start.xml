@@ -40,35 +40,35 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="40dp"
-            android:text="@string/login_subtitle"
+            android:text="@string/start_subtitle"
             android:textColor="#FFFFFF"
             android:textSize="16dp" />
 
         <Button
-            android:id="@+id/btn_new_user"
+            android:id="@+id/btn_start_new_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:width="200dp"
+            android:width="300dp"
             android:background="@drawable/round_button"
             android:drawableLeft="@drawable/ic_action_add_person"
             android:gravity="center|center_vertical"
-            android:text="@string/logon_btn_text"
+            android:text="@string/start_btn_new_user"
             android:textColor="#ffffff"
             android:textSize="18dp" />
 
         <Button
-            android:id="@+id/btn_existing_user"
+            android:id="@+id/btn_start_existing_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="20dp"
-            android:width="200dp"
+            android:width="300dp"
             android:background="@drawable/round_button"
             android:drawableLeft="@drawable/ic_action_person"
             android:gravity="center|center_vertical"
-            android:text="@string/login_btn_text"
+            android:text="@string/start_btn_existing"
             android:textColor="#ffffff"
             android:textSize="18dp" />
     </LinearLayout>

@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|top"
             android:layout_marginBottom="40dp"
-            android:text="@string/logon_title"
+            android:text="@string/login_title"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@color/main_color"
             android:textSize="30dp" />
@@ -31,7 +31,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/logon_edit_phone"
+                android:id="@+id/login_edit_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -39,7 +39,7 @@
                 android:width="300dp"
                 android:background="@drawable/round_edit_text"
                 android:ems="10"
-                android:hint="@string/logon_edit_phone"
+                android:hint="@string/login_edit_phone"
                 android:inputType="phone"
                 android:padding="10dp"
                 android:phoneNumber="true"
@@ -47,52 +47,25 @@
                 android:textSize="15sp" />
 
             <EditText
-                android:id="@+id/logon_edit_user_name"
+                android:id="@+id/login_edit_passwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/round_edit_text"
                 android:ems="10"
-                android:hint="@string/logon_edit_name"
-                android:inputType="textPersonName"
-                android:padding="10dp"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/logon_edit_passwd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/round_edit_text"
-                android:ems="10"
-                android:hint="비밀번호"
-                android:inputType="textPassword"
-                android:padding="10dp"
-                android:textSize="15sp" />
-
-            <EditText
-                android:id="@+id/logon_edit_re_passwd"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp"
-                android:height="100dp"
-                android:background="@drawable/round_edit_text"
-                android:ems="10"
-                android:hint="@string/logon_edit_re_password"
+                android:hint="@string/login_edit_password"
                 android:inputType="textPassword"
                 android:padding="10dp"
                 android:textSize="15sp" />
 
             <Button
-                android:id="@+id/logon_btn_submit"
+                android:id="@+id/login_btn_submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/round_button"
-                android:text="등록"
+                android:text="@string/login_btn_submit"
                 android:textColor="#ffffff"
                 android:textSize="15dp" />
         </LinearLayout>

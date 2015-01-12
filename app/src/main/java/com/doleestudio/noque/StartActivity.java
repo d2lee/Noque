@@ -1,6 +1,7 @@
 package com.doleestudio.noque;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,24 +16,34 @@ public class StartActivity extends ActionBarActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        setLogonButtonClickHandler();
+        setClickHandlerForLogon();
+        setClickHandlerForLogin();
     }
 
-    private void setLogonButtonClickHandler() {
-        Button btnLogin = (Button) findViewById(R.id.btn_new_user);
+    private void setClickHandlerForLogin() {
+        Button btnLogin = (Button) findViewById(R.id.btn_start_existing_user);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLogonFragment();
+                openFragment(new LoginFragment());
             }
         });
     }
 
-    private void openLogonFragment() {
+    private void openFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.start_container, new LogonFragment()).addToBackStack(null).commit();
+                .replace(R.id.start_container, fragment).addToBackStack(null).commit();
     }
 
+    private void setClickHandlerForLogon() {
+        Button btnLogin = (Button) findViewById(R.id.btn_start_new_user);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFragment(new LogonFragment());
+            }
+        });
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
