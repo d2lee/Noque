@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_material_light"
+    tools:context="com.doleestudio.noque.LogonFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginBottom="40dp"
+            android:text="휴대폰 번호 등록"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#00CC66"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_logon_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:width="300dp"
+                android:background="@drawable/round_edit_text"
+                android:ems="10"
+                android:hint="핸드폰 번호"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_logon_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_edit_text"
+                android:ems="10"
+                android:hint="이름"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_logon_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_edit_text"
+                android:ems="10"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_logon_re_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:height="100dp"
+                android:background="@drawable/round_edit_text"
+                android:ems="10"
+                android:hint="비밀번호 확인"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_logon_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/round_button"
+                android:text="등록"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
