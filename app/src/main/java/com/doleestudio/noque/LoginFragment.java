@@ -51,7 +51,6 @@ public class LoginFragment extends Fragment {
     }
 
     private void loginWithPhone(View layout) {
-
     }
 
     private boolean isInputValid(View layout) {

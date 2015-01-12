@@ -3,11 +3,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/background_material_light"
+    android:clickable="true"
     tools:context="com.doleestudio.noque.LogonFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|top"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"

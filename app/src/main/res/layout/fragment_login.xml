@@ -3,11 +3,12 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@color/background_material_light"
+    android:clickable="true"
     tools:context="com.doleestudio.noque.LoginFragment">
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|top"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
@@ -67,7 +68,7 @@
                 android:background="@drawable/round_button"
                 android:text="@string/login_btn_submit"
                 android:textColor="#ffffff"
-                android:textSize="15sp" />
+                android:textSize="15dp" />
         </LinearLayout>
 
     </LinearLayout>
