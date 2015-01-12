@@ -22,7 +22,7 @@
             android:layout_marginBottom="40dp"
             android:text="휴대폰 번호 등록"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="#00CC66"
+            android:textColor="@color/main_color"
             android:textSize="30dp" />
 
         <LinearLayout
