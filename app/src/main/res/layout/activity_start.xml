@@ -3,75 +3,7 @@
     android:id="@+id/start_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.doleestudio.noque.LoginActivit">
-
-    <ImageView
-        android:id="@+id/ivBackground"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scaleType="center"
-        android:src="@drawable/back" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingBottom="10dp"
-            android:text="Noque"
-            android:textAlignment="center"
-            android:textColor="#ffffff"
-            android:textSize="40dp"
-            android:textStyle="bold"
-            android:typeface="normal" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="40dp"
-            android:text="@string/start_subtitle"
-            android:textColor="#FFFFFF"
-            android:textSize="16dp" />
-
-        <Button
-            android:id="@+id/btn_start_new_user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:width="300dp"
-            android:background="@drawable/round_button"
-            android:drawableLeft="@drawable/ic_action_add_person"
-            android:gravity="center|center_vertical"
-            android:text="@string/start_btn_new_user"
-            android:textColor="#ffffff"
-            android:textSize="18dp" />
-
-        <Button
-            android:id="@+id/btn_start_existing_user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="20dp"
-            android:width="300dp"
-            android:background="@drawable/round_button"
-            android:drawableLeft="@drawable/ic_action_person"
-            android:gravity="center|center_vertical"
-            android:text="@string/start_btn_existing"
-            android:textColor="#ffffff"
-            android:textSize="18dp" />
-    </LinearLayout>
+    tools:context="com.doleestudio.noque.LoginActivity">
 
 
 </FrameLayout>
