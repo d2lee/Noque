@@ -9,6 +9,7 @@ import android.widget.Button;
 
 
 public class StartActivity extends ActionBarActivity implements View.OnClickListener {
+    private boolean isBackButtonPressedBefore = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +30,7 @@ public class StartActivity extends ActionBarActivity implements View.OnClickList
 
     private void openLogonFragment() {
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.start_container, new LogonFragment())
-                .commit();
-
+                .replace(R.id.start_container, new LogonFragment()).addToBackStack(null).commit();
     }
 
 

@@ -4,6 +4,7 @@
     <string name="app_name">Noque</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="login_final_close_msg">한번 더 [뒤로] 버튼을 클릭하면 앱이 종료됩니다.</string>
     <string name="login_subtitle">이젠 기다리지 말고 노크하세요.</string>
     <string name="logon_btn_text">신규 사용자</string>
     <string name="login_btn_text">기존 사용자</string>
