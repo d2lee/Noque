@@ -1,6 +1,8 @@
-package com.doleestudio.noque;
+package com.doleestudio.noque.start;
 
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -9,8 +11,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.doleestudio.noque.com.doleestudio.noque.utils.Phone;
+import com.doleestudio.noque.R;
 import com.doleestudio.noque.data.Rule;
+import com.doleestudio.noque.user.MainActivity;
+import com.doleestudio.noque.util.Phone;
 
 
 /**
@@ -51,6 +55,15 @@ public class LoginFragment extends Fragment {
     }
 
     private void loginWithPhone(View layout) {
+        Activity activity = getActivity();
+
+        Intent intent = new Intent(activity, MainActivity.class);
+        clearBackStack(intent);
+        activity.startActivity(intent);
+    }
+
+    private void clearBackStack(Intent intent) {
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
     }
 
     private boolean isInputValid(View layout) {

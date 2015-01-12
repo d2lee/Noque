@@ -1,4 +1,4 @@
-package com.doleestudio.noque;
+package com.doleestudio.noque.start;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,8 +8,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.doleestudio.noque.com.doleestudio.noque.utils.Phone;
+import com.doleestudio.noque.R;
 import com.doleestudio.noque.data.Rule;
+import com.doleestudio.noque.util.Phone;
 
 
 public class LogonFragment extends Fragment {

@@ -1,4 +1,4 @@
-package com.doleestudio.noque.com.doleestudio.noque.utils;
+package com.doleestudio.noque.util;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;
