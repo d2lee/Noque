@@ -23,5 +23,10 @@
     <string name="action_tickets">티켓 목록</string>
     <string name="action_new_ticket">새 티켓</string>
     <string name="action_ticket_history">즐겨찾기</string>
+    <string name="title_activity_user_store"></string>
+    <string name="action_location">현재 위치</string>
+    <string name="action_store_search">스토어 검색</string>
+    <string name="title_activity_user_store_detail">하동관</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

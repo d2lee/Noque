@@ -68,7 +68,8 @@
                 android:background="@drawable/round_button"
                 android:text="@string/login_btn_submit"
                 android:textColor="#ffffff"
-                android:textSize="15dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
