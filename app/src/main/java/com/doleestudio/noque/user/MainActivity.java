@@ -1,5 +1,6 @@
 package com.doleestudio.noque.user;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -19,11 +20,18 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setBackgroundColorForActionBar();
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+    }
+
+    private void setBackgroundColorForActionBar() {
+        int mainColor = getResources().getColor(R.color.main_color);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(mainColor));
     }
 
 

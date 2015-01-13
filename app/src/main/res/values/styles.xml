@@ -2,8 +2,10 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:windowNoTitle">true</item>
+
     </style>
 
-    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"></style>
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
 </resources>
